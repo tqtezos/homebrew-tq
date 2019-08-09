@@ -3,8 +3,8 @@ class LorentzContractParam < Formula
   homepage "https://gitlab.com/michaeljklein/morley/tree/lorentz-contract-param"
 
   url "https://gitlab.com/michaeljklein/morley.git",
-      :revision => "c255c1f4bd1319952b161f1aca084183c1b3ea5d"
-  version "0.3.0.2.1"
+      :revision => "3c3480ab5b70be007cd4bb8a06a5ffc6f48f168b"
+  version "0.3.0.2.2"
 
   head "https://gitlab.com/michaeljklein/morley.git", :branch => "lorentz-contract-param"
 
