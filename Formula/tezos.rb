@@ -15,7 +15,7 @@ class Tezos < Formula
   head "https://gitlab.com/tezos/tezos.git", :branch => "alphanet"
 
   bottle do
-    root_url "https://bintray.com/michaeljklein/bottles-tq"
+    root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
     cellar :any
     sha256 "84c55df7aa9accb9c3f2ff79a4d7045a15d4d56c5518faf4ffec3cc94fbd3294" => :mojave
   end
