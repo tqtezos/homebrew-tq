@@ -6,7 +6,13 @@ class LorentzContractParam < Formula
       :revision => "dd61b48945d6f49188f8e3e7bb46ea7d2f6f377e"
   version "0.3.0.2.3"
 
-  head "https://gitlab.com/michaeljklein/morley.git", :branch => "lorentz-contract-param"
+  head "https://gitlab.com/michaeljklein/morley.git"
+
+  bottle do
+    root_url "https://bintray.com/michaeljklein/bottles-tq"
+    cellar :any_skip_relocation
+    sha256 "ff052cf8f6134f384c2db7b66a79607a80afcff8f2f1e46f9d0c8c48a8e0ed42" => :mojave
+  end
 
   depends_on "haskell-stack"
 

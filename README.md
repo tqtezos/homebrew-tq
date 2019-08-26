@@ -39,3 +39,30 @@ Run the following instead of the above `https` command:
 brew tap TQTezos/homebrew-tq git@gitlab.com:TQTezos/homebrew-tq.git
 ```
 
+## Updating the bottles
+
+Build the bottles:
+
+```bash
+brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
+  --bintray-org=michaeljklein --tap=TQTezos/homebrew-tq TQTezos/homebrew-tq/tezos
+brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
+  --bintray-org=michaeljklein --tap=TQTezos/homebrew-tq TQTezos/homebrew-tq/lorentz-contract-param
+```
+
+Set the environment variables to upload the bottles:
+
+```bash
+export HOMEBREW_BINTRAY_USER="michaeljklein"
+export HOMEBREW_BINTRAY_KEY="API_KEY_HERE"
+```
+
+
+Add packages for each formula: `tezos`, `lorentz-contract-param`
+
+```bash
+brew test-bot --ci-upload --git-name=michaeljklein --git-email=michael@tqgroup.io \
+  --bintray-org=michaeljklein --root-url=https://bintray.com/michaeljklein/bottles-tq
+```
+
+
