@@ -17,8 +17,8 @@ class Tezos < Formula
   bottle do
     root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
     cellar :any
-    rebuild 1
-    sha256 "08d9fec9d3c63693f21a0d542167802e9bc78d998b931b3f98928429abf85fc5" => :mojave
+    rebuild 2
+    sha256 "9f5eda43d650d7de741259c106c901c3a9b9364230f8606c0d584fa0b9ebd1db" => :mojave
   end
 
   depends_on "opam" => "2.0.3"
