@@ -11,7 +11,8 @@ class LorentzContractParam < Formula
   bottle do
     root_url "https://bintray.com/michaeljklein/bottles-tq"
     cellar :any_skip_relocation
-    sha256 "ff052cf8f6134f384c2db7b66a79607a80afcff8f2f1e46f9d0c8c48a8e0ed42" => :mojave
+    rebuild 1
+    sha256 "30114769a073ff6d984be26ae2e821f2def587b20f665e7c8ab2764ac053351a" => :mojave
   end
 
   depends_on "haskell-stack"
