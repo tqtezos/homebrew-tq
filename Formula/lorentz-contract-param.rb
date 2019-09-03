@@ -3,8 +3,8 @@ class LorentzContractParam < Formula
   homepage "https://gitlab.com/michaeljklein/morley/tree/lorentz-contract-param"
 
   url "https://gitlab.com/michaeljklein/morley.git",
-      :revision => "dd61b48945d6f49188f8e3e7bb46ea7d2f6f377e"
-  version "0.3.0.2.3"
+      :revision => "7262ada0e63f39154c6b9eb546b5f16f756a867b"
+  version "0.3.0.2.4"
 
   head "https://gitlab.com/michaeljklein/morley.git"
 
@@ -22,13 +22,17 @@ class LorentzContractParam < Formula
 
     system "stack", "build"
 
-    bin_path = File.join `stack path --local-install-root`.chomp, "bin/lorentz-contract-param"
-
-    if File.exist?(bin_path) && File.executable?(bin_path)
-      bin.mkpath
-      bin.install bin_path
-    else
-      raise "#{bin_path} either missing or not executable"
+    bin_path_root = File.join `stack path --local-install-root`.chomp, 'bin'
+    ["lorentz-contract-param",
+     "lorentz-contract-storage",
+     "lorentz-contracts"].each do |bin_name|
+       bin_path = File.join bin_path_root, bin_name
+       if File.exist?(bin_path) && File.executable?(bin_path)
+         bin.mkpath
+         bin.install bin_path
+       else
+         raise "#{bin_path} either missing or not executable"
+       end
     end
   end
 
