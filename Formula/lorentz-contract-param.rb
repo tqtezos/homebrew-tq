@@ -22,17 +22,17 @@ class LorentzContractParam < Formula
 
     system "stack", "build"
 
-    bin_path_root = File.join `stack path --local-install-root`.chomp, 'bin'
+    bin_path_root = File.join `stack path --local-install-root`.chomp, "bin"
     ["lorentz-contract-param",
      "lorentz-contract-storage",
      "lorentz-contracts"].each do |bin_name|
-       bin_path = File.join bin_path_root, bin_name
-       if File.exist?(bin_path) && File.executable?(bin_path)
-         bin.mkpath
-         bin.install bin_path
-       else
-         raise "#{bin_path} either missing or not executable"
-       end
+      bin_path = File.join bin_path_root, bin_name
+      if File.exist?(bin_path) && File.executable?(bin_path)
+        bin.mkpath
+        bin.install bin_path
+      else
+        raise "#{bin_path} either missing or not executable"
+      end
     end
   end
 
