@@ -8,12 +8,11 @@ class LorentzContractParam < Formula
 
   head "https://gitlab.com/michaeljklein/morley.git"
 
-  # bottle do
-  #   root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
-  #   cellar :any_skip_relocation
-  #   rebuild 2
-  #   sha256 "631ab9934cc8c27217359b7a3125a1438048bd2a60434667f6965a92f61a5e09" => :mojave
-  # end
+  bottle do
+    root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
+    cellar :any_skip_relocation
+    sha256 "8776b29565eeb1ef4841526c2371eb1ff7b968b0b75ed833e64aaf5cc556a94b" => :mojave
+  end
 
   depends_on "haskell-stack"
 
