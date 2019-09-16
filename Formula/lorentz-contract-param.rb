@@ -1,6 +1,6 @@
 class LorentzContractParam < Formula
   desc "Haskell to Michelson for Lorentz contract parameters"
-  homepage "https://gitlab.com/michaeljklein/morley/tree/lorentz-contract-param"
+  homepage "https://gitlab.com/michaeljklein/morley"
 
   url "https://gitlab.com/michaeljklein/morley.git",
       :revision => "b9e60bf582f6780b2dc9ca22dcc3f9f1aa9922d2"
