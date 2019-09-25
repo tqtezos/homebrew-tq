@@ -11,7 +11,6 @@ class Tezos < Formula
   url "https://gitlab.com/tezos/tezos.git",
       :revision => "20ce5a625781c6abbaaefdb9e7c8896aba799a7a"
   version "004_Pt24m4xi"
-  revision 1
 
   head "https://gitlab.com/tezos/tezos.git", :branch => "alphanet"
 
