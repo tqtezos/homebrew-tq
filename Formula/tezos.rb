@@ -11,14 +11,18 @@ class Tezos < Formula
   url "https://gitlab.com/tezos/tezos.git",
       :revision => "20ce5a625781c6abbaaefdb9e7c8896aba799a7a"
   version "004_Pt24m4xi"
+  revision 1
 
   head "https://gitlab.com/tezos/tezos.git", :branch => "alphanet"
 
   bottle do
     root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
     cellar :any
-    rebuild 2
+    rebuild 2 if OS.mac?
+    rebuild 3 if OS.linux?
     sha256 "9f5eda43d650d7de741259c106c901c3a9b9364230f8606c0d584fa0b9ebd1db" => :mojave
+    sha256 "52bc29b5ad8b270227f276bda540d483af8f846cc7a88d7fcca34b215a85dfd0" => :x86_64_linux
+   end
   end
 
   depends_on "opam" => "2.0.3"
