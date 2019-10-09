@@ -8,7 +8,7 @@ A [Homebrew](https://brew.sh/) Tap for [TQ Tezos](https://tqtezos.com/)'s formul
 To setup the Tap so Homebrew can find this formulae, run:
 
 ```bash
-brew tap TQTezos/homebrew-tq https://gitlab.com/TQTezos/homebrew-tq.git
+brew tap tqtezos/homebrew-tq https://github.com/tqtezos/homebrew-tq.git
 ```
 
 To install a particular formula whose name is unique to this Tap, run:
@@ -27,7 +27,7 @@ brew install tezos
 Otherwise, run:
 
 ```bash
-brew install TQTezos/homebrew-tq/<formula>
+brew install tqtezos/homebrew-tq/<formula>
 ```
 
 
@@ -36,7 +36,7 @@ brew install TQTezos/homebrew-tq/<formula>
 Run the following instead of the above `https` command:
 
 ```bash
-brew tap TQTezos/homebrew-tq git@gitlab.com:TQTezos/homebrew-tq.git
+brew tap tqtezos/homebrew-tq git@github.com:tqtezos/homebrew-tq.git
 ```
 
 ## Updating the bottles
@@ -45,9 +45,9 @@ Build the bottles:
 
 ```bash
 brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
-  --bintray-org=michaeljklein --tap=TQTezos/homebrew-tq TQTezos/homebrew-tq/tezos
+  --bintray-org=michaeljklein --tap=tqtezos/homebrew-tq tqtezos/homebrew-tq/tezos
 brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
-  --bintray-org=michaeljklein --tap=TQTezos/homebrew-tq TQTezos/homebrew-tq/lorentz-contract-param
+  --bintray-org=michaeljklein --tap=tqtezos/homebrew-tq tqtezos/homebrew-tq/lorentz-contract-param
 ```
 
 Set the environment variables to upload the bottles:
