@@ -23,7 +23,7 @@ class LorentzContractParam < Formula
     end
   end
 
-  depends_on "haskell-stack.rb" => "1.9.3" if OS.mac?
+  depends_on "haskell-stack" => "1.9.3" if OS.mac?
 
   def install
     ENV.deparallelize
