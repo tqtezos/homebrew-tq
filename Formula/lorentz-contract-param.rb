@@ -50,6 +50,11 @@ class LorentzContractParam < Formula
   end
 
   test do
+    if OS.linux?
+      (buildpath/"linux-stack").install resource("linux-stack")
+      ENV.append_path "PATH", "#{buildpath}/linux-stack"
+    end
+
     assert_predicate bin/"lorentz-contract-param", :exist?
     assert_predicate bin/"lorentz-contract-storage", :exist?
     assert_predicate bin/"lorentz-contract", :exist?
