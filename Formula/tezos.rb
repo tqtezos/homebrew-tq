@@ -24,10 +24,18 @@ class Tezos < Formula
   #   sha256 "9f5eda43d650d7de741259c106c901c3a9b9364230f8606c0d584fa0b9ebd1db" => :mojave
   #   sha256 "52bc29b5ad8b270227f276bda540d483af8f846cc7a88d7fcca34b215a85dfd0" => :x86_64_linux
   # end
+    # cellar :any
+    # sha256 "2977a2d6578a57ef4e65aa577a1bb6aa5af54f2a02026e869e09289af9d78df5" => :mojave
+  # end
 
-  depends_on "opam" => "2.0.3"
+  depends_on "opam" => "2.0.5"
 
-  dependencies = %w[gmp hidapi libev pkg-config rsync wget]
+  build_dependencies = %w[pkg-config rsync wget]
+  build_dependencies.each do |dependency|
+    depends_on dependency => :build
+  end
+
+  dependencies = %w[gmp hidapi libev]
   dependencies.each do |dependency|
     depends_on dependency
   end
