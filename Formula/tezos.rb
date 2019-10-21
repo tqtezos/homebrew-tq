@@ -28,7 +28,7 @@ class Tezos < Formula
     # sha256 "2977a2d6578a57ef4e65aa577a1bb6aa5af54f2a02026e869e09289af9d78df5" => :mojave
   # end
 
-  depends_on "opam@2.0.5" => :build
+  depends_on "opam" => :build
 
   build_dependencies = %w[pkg-config rsync wget]
   build_dependencies.each do |dependency|
