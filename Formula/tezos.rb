@@ -9,7 +9,8 @@ class Tezos < Formula
   homepage "https://gitlab.com/tezos/tezos"
 
   url "https://gitlab.com/tezos/tezos.git",
-      :revision => "a7d357bb290eab43c92ec2245811e9af959d1d4c"
+      :revision => "a7d357bb290eab43c92ec2245811e9af959d1d4c",
+      :shallow  => false
   version "proto_005_PsBabyM1"
 
   head "https://gitlab.com/tezos/tezos.git", :branch => "babylonnet"
