@@ -3,17 +3,17 @@ class LorentzContractParam < Formula
   homepage "https://github.com/tqtezos/lorentz-contract-param"
 
   url "https://github.com/tqtezos/lorentz-contract-param.git",
-      :revision => "7cab4e03917f907e5cbb1ee7cb9137c7c3c76fbd"
-  version "1.2.0.1.3"
+      :revision => "428d233ae3586d8b681f4ee4faac7196143de5cc"
+  version "1.2.0.1.4"
 
   head "https://github.com/tqtezos/lorentz-contract-param.git"
 
-  bottle do
-    root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
-    cellar :any_skip_relocation
-    sha256 "84b7a58fcfca547ae608804e2ddd464c9809918d6e8bfdacf06291cef587163c" => :mojave
-    sha256 "2cd7a349c6c7a14bd186cc826a36b8db50d2e111bc0d880f6e57f4ea148d68ca" => :x86_64_linux
-  end
+  # bottle do
+  #   root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
+  #   cellar :any_skip_relocation
+  #   sha256 "84b7a58fcfca547ae608804e2ddd464c9809918d6e8bfdacf06291cef587163c" => :mojave
+  #   sha256 "2cd7a349c6c7a14bd186cc826a36b8db50d2e111bc0d880f6e57f4ea148d68ca" => :x86_64_linux
+  # end
 
   unless OS.mac?
     resource "linux-stack" do
