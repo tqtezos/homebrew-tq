@@ -15,6 +15,13 @@ class LorentzContractParam < Formula
   #   sha256 "2cd7a349c6c7a14bd186cc826a36b8db50d2e111bc0d880f6e57f4ea148d68ca" => :x86_64_linux
   # end
 
+  unless OS.linux?
+    resource "mac-stack" do
+      url "https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-osx-x86_64.tar.gz"
+      sha256 "05ff745b88fb24911aa6b7e2b2e7098f04c2fdf769f00f921d44ffecbc417bc2"
+    end
+  end
+
   unless OS.mac?
     resource "linux-stack" do
       url "https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64-static.tar.gz"
@@ -22,11 +29,15 @@ class LorentzContractParam < Formula
     end
   end
 
-  depends_on "haskell-stack" => "1.9.3" if OS.mac?
+  # depends_on "haskell-stack" => "1.9.3" if OS.mac?
 
   def install
     ENV.deparallelize
 
+    if OS.mac?
+      (buildpath/"mac-stack").install resource("mac-stack")
+      ENV.append_path "PATH", "#{buildpath}/mac-stack"
+    end
     if OS.linux?
       (buildpath/"linux-stack").install resource("linux-stack")
       ENV.append_path "PATH", "#{buildpath}/linux-stack"
