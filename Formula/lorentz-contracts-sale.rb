@@ -3,8 +3,8 @@ class LorentzContractsSale < Formula
   homepage "https://github.com/tqtezos/lorentz-contracts-sale"
 
   url "https://github.com/tqtezos/lorentz-contracts-sale.git",
-      :revision => "a5e924b354df1389e4a775be2028a150eb4cb668"
-  version "0.1.0.0"
+      :revision => "ef6b8cf379ac86c4efcb21d5b5c73434a8c967d9"
+  version "0.1.0.1"
 
   head "https://github.com/tqtezos/lorentz-contracts-sale.git"
 
