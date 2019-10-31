@@ -1,5 +1,5 @@
 class LorentzContractsSale < Formula
-  desc "Haskell to Michelson for Lorentz Sale contract and parameters"
+  desc "Haskell to Michelson for Lorentz Sale contract"
   homepage "https://github.com/tqtezos/lorentz-contracts-sale"
 
   url "https://github.com/tqtezos/lorentz-contracts-sale.git",
@@ -7,6 +7,13 @@ class LorentzContractsSale < Formula
   version "0.1.0.1"
 
   head "https://github.com/tqtezos/lorentz-contracts-sale.git"
+
+  bottle do
+    root_url "https://dl.bintray.com/michaeljklein/bottles-tq/"
+    cellar :any_skip_relocation
+    sha256 "bbb7e57e69f18bf2fdeb515456d7f422c62559658afacf9658324234f5f390aa" => :mojave
+    sha256 "31dfe79a70b1e7781446763e41e9f04e7c7ee06b43a3fbe126307137cdb8e91c" => :x86_64_linux
+  end
 
   unless OS.linux?
     resource "mac-stack" do
@@ -21,8 +28,6 @@ class LorentzContractsSale < Formula
       sha256 "c9bf6d371b51de74f4bfd5b50965966ac57f75b0544aebb59ade22195d0b7543"
     end
   end
-
-  # depends_on "haskell-stack" => "1.9.3" if OS.mac?
 
   def install
     ENV.deparallelize
