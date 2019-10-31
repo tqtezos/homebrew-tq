@@ -8,12 +8,12 @@ class LorentzContractParam < Formula
 
   head "https://github.com/tqtezos/lorentz-contract-param.git"
 
-  # bottle do
-  #   root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
-  #   cellar :any_skip_relocation
-  #   sha256 "84b7a58fcfca547ae608804e2ddd464c9809918d6e8bfdacf06291cef587163c" => :mojave
-  #   sha256 "2cd7a349c6c7a14bd186cc826a36b8db50d2e111bc0d880f6e57f4ea148d68ca" => :x86_64_linux
-  # end
+  bottle do
+    root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
+    cellar :any_skip_relocation
+    sha256 "76e959f1de7f507014be7b93d00a1985a6ed26c06d934e151b26c033bdcbe40c" => :mojave
+    sha256 "cc14e6c6b356073a2da22c66882e6951f84394211152f2b5b5c584e6ecb63284" => :x86_64_linux
+  end
 
   unless OS.linux?
     resource "mac-stack" do
@@ -28,8 +28,6 @@ class LorentzContractParam < Formula
       sha256 "c9bf6d371b51de74f4bfd5b50965966ac57f75b0544aebb59ade22195d0b7543"
     end
   end
-
-  # depends_on "haskell-stack" => "1.9.3" if OS.mac?
 
   def install
     ENV.deparallelize

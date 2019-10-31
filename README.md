@@ -48,6 +48,8 @@ brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
   --bintray-org=michaeljklein --tap=tqtezos/homebrew-tq tqtezos/homebrew-tq/tezos
 brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
   --bintray-org=michaeljklein --tap=tqtezos/homebrew-tq tqtezos/homebrew-tq/lorentz-contract-param
+brew test-bot --root-url=https://bintray.com/michaeljklein/bottles-tq \
+  --bintray-org=michaeljklein --tap=tqtezos/homebrew-tq tqtezos/homebrew-tq/lorentz-contracts-sale
 ```
 
 Set the environment variables to upload the bottles:
