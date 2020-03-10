@@ -8,17 +8,17 @@ class Tezos < Formula
   desc "Platform for distributed consensus with meta-consensus capability"
   homepage "https://gitlab.com/tezos/tezos"
 
-  url "https://gitlab.com/tezos/tezos.git", :revision => "a7d357bb290eab43c92ec2245811e9af959d1d4c", :branch => "mainnet", :shallow => false
-  version "proto_005_PsBabyM1"
+  url "https://gitlab.com/tezos/tezos.git", :revision => "64c855499057fa84b41fcb9f3d7d72d4570db1a7", :branch => "mainnet", :shallow => false
+  version "proto_006_PsCARTHA"
 
-  head "https://gitlab.com/tezos/tezos.git", :branch => "babylonnet"
+  head "https://gitlab.com/tezos/tezos.git", :branch => "carthagenet"
 
-  bottle do
-    root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
-    cellar :any
-    sha256 "1ea43b32da55dfcbc3d7537b09e2144495f4fcab268587af11f472913b82ae15" => :mojave
-    sha256 "01e239b1e169612516bead411a102dc805fc04d79b334be9055edf721b1a4477" => :x86_64_linux
-  end
+#   bottle do
+#     root_url "https://dl.bintray.com/michaeljklein/bottles-tq"
+#     cellar :any
+#     sha256 "1ea43b32da55dfcbc3d7537b09e2144495f4fcab268587af11f472913b82ae15" => :mojave
+#     sha256 "01e239b1e169612516bead411a102dc805fc04d79b334be9055edf721b1a4477" => :x86_64_linux
+#   end
 
   depends_on "opam" => :build
 
