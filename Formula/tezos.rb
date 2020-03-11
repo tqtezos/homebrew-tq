@@ -9,7 +9,7 @@ class Tezos < Formula
   homepage "https://gitlab.com/tezos/tezos"
 
   url "https://gitlab.com/tezos/tezos.git", :revision => "64c855499057fa84b41fcb9f3d7d72d4570db1a7", :branch => "mainnet", :shallow => false
-  version "proto_006_PsCARTHA"
+  version "006_PsCARTHA"
 
   head "https://gitlab.com/tezos/tezos.git", :branch => "carthagenet"
 
