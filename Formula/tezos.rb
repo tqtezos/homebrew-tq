@@ -10,7 +10,7 @@ class Tezos < Formula
 
   url "https://gitlab.com/tezos/tezos.git", :revision => "6b9f3bc3c90d99d4a2bd5cd26e6f3efbcb977090", :branch => "latest-release", :shallow => false
 
-  version "7.2-release"
+  version "7.2"
 
   head "https://gitlab.com/tezos/tezos.git", :branch => "v7-release"
 
