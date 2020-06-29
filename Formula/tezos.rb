@@ -10,9 +10,9 @@ class Tezos < Formula
 
   # url "https://gitlab.com/tezos/tezos.git", :revision => "64c855499057fa84b41fcb9f3d7d72d4570db1a7", :branch => "mainnet", :shallow => false
 
-  url "https://gitlab.com/tezos/tezos.git", :revision => "51977265590ba5fbd166b921e265fa22bf9f66a6", :branch => "latest-release", :shallow => false
-  
-  version "007_multinetwork"
+  url "https://gitlab.com/tezos/tezos.git", :revision => "6b9f3bc3c90d99d4a2bd5cd26e6f3efbcb977090", :branch => "latest-release", :shallow => false
+
+  version "7.2-release"
 
   head "https://gitlab.com/tezos/tezos.git", :branch => "v7-release"
 
