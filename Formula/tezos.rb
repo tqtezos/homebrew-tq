@@ -8,7 +8,7 @@ class Tezos < Formula
   desc "Platform for distributed consensus with meta-consensus capability"
   homepage "https://gitlab.com/tezos/tezos"
 
-  url "https://gitlab.com/tezos/tezos.git", :revision => "6b9f3bc3c90d99d4a2bd5cd26e6f3efbcb977090", :branch => "latest-release", :shallow => false
+  url "https://gitlab.com/tezos/tezos.git", :revision => "6b9f3bc3c90d99d4a2bd5cd26e6f3efbcb977090", :tag => "v7.2", :shallow => false
 
   version "7.2"
 
