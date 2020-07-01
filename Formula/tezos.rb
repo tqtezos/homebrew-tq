@@ -16,7 +16,7 @@ class Tezos < Formula
     root_url "https://bintray.com/michaeljklein/bottles-tq"
     cellar :any
     rebuild 1
-    sha256 "dac4ee6d43ea671f504283c6d497cfc241b5c166d896a52288fa2f311e443618" => :catalina
+    sha256 "eda8424a2e1f56f3dcaa75680f475747cd898ee3546c09b182062d42f474c9de" => :catalina
   end
 
   depends_on "opam" => :build
