@@ -8,15 +8,17 @@ class Tezos < Formula
   desc "Platform for distributed consensus with meta-consensus capability"
   homepage "https://gitlab.com/tezos/tezos"
 
-  url "https://gitlab.com/tezos/tezos.git", :revision => "ba45727cadd0416936fbd49400bcc986a55064ca", :shallow => false
+  url "https://gitlab.com/tezos/tezos.git", :tag => "v7.4", :shallow => false
 
-  version "7.3"
+  version "7.4"
 
   bottle do
-    root_url "https://dl.bintray.com/tqtezos/bottles-tq"
+    # something like this... the url will likely change
+    root_url "https://github.com/tqtezos/homebrew-tq/releases/download/v7.4/binaries-7.4.tar.gz"
     cellar :any
     rebuild 2
-    sha256 "3cad23832570eab072c23a13b1e90acccee11dab5631e561832493c715625762" => :catalina
+    # also this will likely change as well.
+    sha256 "0000000000000000000000000000000000000000000000000000000000000000" => :catalina
   end
 
   depends_on "opam" => :build
