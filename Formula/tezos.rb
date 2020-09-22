@@ -16,7 +16,7 @@ class Tezos < Formula
     root_url "https://github.com/tqtezos/homebrew-tq/releases/download/v7.4"
     cellar :any
     rebuild 2
-    sha256 "d85c0a3411ef5b1266881f4643214930672d2c7816d15de32a8f346253785701" => :catalina
+    sha256 "d52d5ed35b73e8927f18718740b9322b1996f5f85bb48afa368c5997deeb447a" => :catalina
   end
 
   depends_on "opam" => :build
