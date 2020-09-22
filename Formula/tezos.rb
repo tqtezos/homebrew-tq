@@ -13,7 +13,7 @@ class Tezos < Formula
   version "7.4"
 
   bottle do
-    root_url "https://github.com/tqtezos/homebrew-tq/releases/download/v7.4/binaries-7.4.tar.gz"
+    root_url "https://github.com/tqtezos/homebrew-tq/releases/download/v7.4"
     cellar :any
     rebuild 2
     sha256 "d85c0a3411ef5b1266881f4643214930672d2c7816d15de32a8f346253785701" => :catalina
