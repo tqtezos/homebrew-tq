@@ -1,5 +1,13 @@
 # homebrew-tq
 
+**PLEASE FIND BOTTLES AT** [serokell/tezos-packaging](https://github.com/serokell/tezos-packaging/releases/tag/v8.2-1)
+
+**ADDITIONALLY YOU MAY ADD THEIR TAP BY ISSUING THE FOLLOWING COMMAND**
+
+``` bash
+brew tap serokell/tezos-packaging https://github.com/serokell/tezos-packaging.git
+```
+
 A [Homebrew](https://brew.sh/) Tap for [TQ Tezos](https://tqtezos.com/)'s formulae.
 
 
@@ -66,5 +74,3 @@ Add packages for each formula: `tezos`, `lorentz-contract-param`
 brew test-bot --ci-upload --git-name=michaeljklein --git-email=michael@tqgroup.io \
   --bintray-org=michaeljklein --root-url=https://bintray.com/michaeljklein/bottles-tq
 ```
-
-
