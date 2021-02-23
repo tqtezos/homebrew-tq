@@ -1,5 +1,7 @@
 # homebrew-tq
 
+<span style="color: #900; font-size: 300%">⚠ This repository is NOT maintained ☣</span>
+
 **PLEASE FIND BOTTLES AT** [serokell/tezos-packaging](https://github.com/serokell/tezos-packaging/releases/tag/v8.2-1)
 
 **ADDITIONALLY YOU MAY ADD THEIR TAP BY ISSUING THE FOLLOWING COMMAND**
